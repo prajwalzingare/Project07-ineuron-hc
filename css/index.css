@@ -1,0 +1,190 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+}
+
+/* navbar desighn  */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 1.5rem;
+}
+
+.nav-items {
+    display: flex;
+    padding: 20px;
+}
+
+.nav-item {
+    padding: 1.2rem;
+    font-size: 1.2rem;
+    transition: all .2s ease;
+}
+
+.nav-item:hover {
+    cursor: pointer;
+    color: #fe5e35;
+}
+
+/* intro section  */
+.intro-section {
+    margin: 10px 1.5rem;
+    display: flex;
+    flex-direction: row;
+
+}
+
+/* left section  */
+.left-section {
+    display: flex;
+    flex-direction: column;
+    margin-right: 147px;
+}
+
+.left-section h3 {
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.left-section h3 img {
+    height: 4rem;
+    width: 2rem;
+    padding: 1px;
+    margin-left: 10px
+}
+
+.intro-section .left-section h1 {
+    font-size: 4rem;
+}
+
+.intro-section .left-section .sub-headlines {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+    margin-top: 10px;
+
+}
+
+.intro-section .left-section .sub-headlines .sub-headline img {
+    background-color: #fe5e35;
+    padding: 10px;
+    border-radius: 90%;
+    vertical-align: middle;
+    margin: 8px;
+}
+
+.intro-section .left-section .sub-headlines .sub-headline {
+    margin-left: 10px;
+    vertical-align: middle;
+    font-size: 1rem;
+}
+
+
+
+.intro-section .left-section .text {
+    margin: 35px 10px;
+    font-weight: 200;
+}
+
+.intro-section .left-section .action-btns {
+    display: flex;
+    flex-direction: row;
+    margin: 0px 20px;
+}
+
+.intro-section .left-section .action-btns .action-btn {
+    background-color: #fe5e35;
+    padding: 11px;
+    margin: 5px 18px;
+    border-radius: 20px;
+    color: white;
+    font-size: 1rem;
+    border: 1px solid;
+}
+
+.right-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.right-section .headphone-div {
+    position: relative;
+}
+
+.right-section .headphone-div img:nth-child(n+2) {
+    position: relative;
+    right: 102px;
+    bottom: 2.6rem;
+    height: 345px;
+    width: 384px;
+}
+
+.headphone-div .discount {
+    position: absolute;
+    top: 192px;
+    right: 412px;
+    z-index: 1;
+    height: 99px;
+}
+
+.right-section .discount-content {
+    position: absolute;
+    z-index: 10000;
+    top: 213px;
+    left: -106px;
+    overflow: auto;
+    color: white;
+}
+
+.right-section .dots {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    position: relative;
+    left: 29px;
+    bottom: 33px
+}
+
+.right-section .dots .yellow-dot {
+
+    height: 25px;
+    width: 25px;
+    background-color: rgb(236, 219, 27);
+    border-radius: 50%;
+    margin: 0px 10px;
+}
+
+.right-section .dots .tomato-dot {
+    height: 25px;
+    width: 25px;
+    background-color: red;
+    border-radius: 50%;
+    margin: 0px 10px;
+}
+
+.right-section .dots .black-dot {
+
+    height: 25px;
+    width: 25px;
+    background-color: black;
+    border-radius: 50%;
+    margin: 0px 10px;
+}
+
+.right-section .action-btn {
+    position: relative;
+    top: 23px;
+    right: 66px;
+    background-color: rgb(254, 94, 53);
+    padding: 11px;
+    border-radius: 20px;
+    color: white;
+    margin: 39px;
+    font-size: 1rem;
+    border: 1px solid;
+}
