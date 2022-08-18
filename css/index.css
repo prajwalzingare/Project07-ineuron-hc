@@ -29,12 +29,37 @@ nav {
     color: #fe5e35;
 }
 
+@media screen and (max-width:650px) {
+    .nav-items {
+        display: none;
+        padding: 20px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px 5rem 10px 1.5rem;
+        overflow-x: auto;
+    }
+}
+
 /* intro section  */
 .intro-section {
     margin: 10px 1.5rem;
     display: flex;
     flex-direction: row;
 
+}
+
+@media screen and (max-width:650px) {
+    .intro-section {
+        margin: 10px 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
 }
 
 /* left section  */
@@ -107,6 +132,23 @@ nav {
     border: 1px solid;
 }
 
+@media screen and (max-width:650px) {
+    .left-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0px;
+    }
+
+    .intro-section .left-section h1 {
+        font-size: 2rem;
+    }
+}
+
+
+
+/* right section  */
 .right-section {
     display: flex;
     flex-direction: column;
@@ -187,4 +229,52 @@ nav {
     margin: 39px;
     font-size: 1rem;
     border: 1px solid;
+}
+
+@media screen and (max-width:650px) {
+
+    .right-section .headphone-div {
+
+        justify-content: center;
+        align-items: center;
+        margin-left: 70px;
+    }
+
+    .right-section .headphone-div img:nth-child(n+2) {
+        position: static;
+        align-items: center;
+        height: 200px;
+        width: 200px;
+
+    }
+
+    .right-section .dots {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        position: static;
+
+    }
+
+    .headphone-div .discount {
+        display: none;
+    }
+
+    .right-section .discount-content {
+        display: none;
+    }
+
+    .right-section .action-btn {
+        position: static;
+        top: 23px;
+        right: 66px;
+        background-color: rgb(254, 94, 53);
+        padding: 11px;
+        border-radius: 20px;
+        color: white;
+        margin: 39px;
+        font-size: 1rem;
+        border: 1px solid;
+    }
+
 }
